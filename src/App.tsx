@@ -50,7 +50,7 @@ function App() {
       formData.append('before_image', beforeImage);
       formData.append('after_image', afterImage);
 
-      const response = await fetch('http://localhost:5000/api/compare', {
+      const response = await fetch('https://human-face-idetification.onrender.com/api/compare', {
         method: 'POST',
         body: formData,
       });
